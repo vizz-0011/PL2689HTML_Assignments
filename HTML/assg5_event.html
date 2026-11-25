@@ -1,0 +1,114 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Tech Conference 2026</h1>
+        <p>Register for our technology event</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Event Details -->
+        <section>
+            <h2>About the Event</h2>
+            <p>Join us for a technology conference to learn about programming, cloud computing and new technologies.</p>
+
+            <p>Date: <time datetime="2026-12-15">December 15, 2026</time></p>
+
+            <p>Location:</p>
+            <address>
+                Tech Auditorium,<br>
+                Kochi, Kerala, India
+            </address>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <!-- Personal Details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <br><br>
+
+                </fieldset>
+
+                <!-- Ticket Type -->
+                <br>
+
+                <label for="ticket">Ticket Type:</label>
+                <select id="ticket" name="ticket" required>
+                    <option value="">Select Ticket</option>
+                    <option value="standard">Standard</option>
+                    <option value="vip">VIP</option>
+                    <option value="student">Student</option>
+                </select>
+
+                <br><br>
+
+                <!-- Meal Preference -->
+                <fieldset>
+                    <legend>Meal Preference</legend>
+
+                    <input type="radio" id="veg" name="meal" value="vegetarian" required>
+                    <label for="veg">Vegetarian</label>
+
+                    <input type="radio" id="nonveg" name="meal" value="non-vegetarian">
+                    <label for="nonveg">Non-Vegetarian</label>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Comments -->
+                <label for="comments">Comments:</label>
+                <br>
+                <textarea id="comments" name="comments" placeholder="Enter your comments" rows="4" cols="40"></textarea>
+
+                <br><br>
+
+                <!-- Terms -->
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the terms and conditions</label>
+
+                <br><br>
+
+                <!-- Submit -->
+                <button type="submit">Register</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 Tech Conference</p>
+    </footer>
+
+</body>
+</html>
